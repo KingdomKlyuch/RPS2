@@ -8,6 +8,8 @@ const returnResult = document.querySelector('.returnResult')
 const restart = document.querySelector('.restart')
 let playerScore = document.querySelector('.playerScore')
 let computerScore = document.querySelector('.computerScore')
+let playerScoreNum = 0;
+let computerScoreNum = 0;
 let playerSelection = ''
 
 
@@ -35,32 +37,32 @@ const playRound = (playerSelection) => {
       (playerSelection === "scissors" && computerSelection === "paper")
     ) {
       // Player wins
-      playerScore.innerHTML = `Player: ${playerSelection} (+1 point)`;
+      playerScore.innerHTML = `Player: ${playerSelection} (+1 point) | Score: ${playerScoreNum}`;
       returnResult.innerHTML = "Player wins!";
-      playerScore += 1;
-      if (playerScore === 5) {
+      playerScoreNum += 1;
+      if (playerScoreNum === 5) {
         winner.innerHTML = "Game over: Player wins!";
       }
     } else {
       // Computer wins
-      computerScore.innerHTML = `Computer: ${computerSelection} (+1 point)`;
+      computerScore.innerHTML = `Computer: ${computerSelection} (+1 point) | Score: ${computerScoreNum}`
       returnResult.innerHTML = "Computer wins!";
-      computerScore += 1;
-      if (computerScore === 5) {
+      computerScoreNum += 1;
+      if (computerScoreNum === 5) {
         winner.innerHTML = "Game over: Computer wins!";
       }
     }
   };
 
- // restart.addEventListener('click', () => {
+  restart.addEventListener('click', () => {
     // Reset player and computer scores
- //   playerScore = 0;
- //   computerScore = 0;
- //   playerScore.innerHTML = `Player: 0`;
- //   computerScore.innerHTML = `Computer: 0`;
- //   winner.innerHTML = "";
- //   returnResult.innerHTML = "";
- // });
+    playerScoreNum = 0;
+    computerScoreNum = 0;
+    playerScore.innerHTML = `Player: 0 | Score: ${playerScoreNum}`;
+    computerScore.innerHTML = `Computer: 0 | Score: ${computerScoreNum}`;
+    winner.innerHTML = "";
+    returnResult.innerHTML = "";
+  });
 
 
   rock.addEventListener('click', () => {
