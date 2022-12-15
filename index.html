@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Page Title</title>
-  <script src="./script.js"></script>
+  <script src="./script.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="styles.css" /> 
 </head>
 <body>
+
 <div class="returnResult">
 
 </div>
@@ -13,16 +15,38 @@
 
 </div>
 
-<div>
-    <button class="rock">rock</button>
-    <button class="paper">paper</button>
-    <button class="scissors">scissors</button>
+<div id="topbox">
+
+    <button class="restart">restart</button>
+    <div class="computerScore">computer: 0
+    <div class="computerScoreNum">0</div>
+    <div class="computer">computer</div>
 </div>
 
-<div>
-<div class="playerscore">player score</div>
-<button class="restart">restart</button>
-<div class="computerscore">computer score</div>
+  
+<div id="middlebox">
+    <button class="rock">
+        <img src="./images/therock2pop.jpg" width="200px" height="300px" alt="rock">
+    </button>
+    <button class="paper">
+        <img src="./images/michaelpop2.jpg" width="200px" height="300px" alt="paper">
+    </button>
+    <button class="scissors">
+        <img src="./images/edpop.jpg" width="200px" height="300px" alt="scissors">
+    </button>
+
+</div>
+    <div class="playerScore">player: 0
+    <div class="playerScoreNum">0</div>
+    <div class="player">player</div>
+<div id="bottombox">
+
+
+</div>
+
+
+</div>
+
 </div>
 
 
