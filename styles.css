@@ -9,16 +9,26 @@ html {
         color: white;
         font-family: roboto, arial, sans-serif;
         min-height: 100vh;
-        
-        display: flex;
+        flex-shrink: 1;
+    
     }
+.rock, 
+.paper,
+.scissors{
+border-radius: 10px;
+opacity: 90%;
+
+
+}
+
+
 
 .button-box {
 display: flex;
-margin-left: 300px;
+margin-left: 550px;
     margin-top: 150px;
     margin-bottom: 130px;
-    margin-right: 300px;
+    margin-right: 550px;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 100px;
@@ -29,7 +39,7 @@ margin-left: 300px;
     height: 250px;
     gap: 80px;
     justify-content: space-evenly;
-
+    flex-shrink: 1;
 }
 
 .score-container {
@@ -56,11 +66,11 @@ height: 80px;
     text-align: justify;
 height: 80px;
     width: 80px;
-    padding-left: 500px;
+    padding-left: 440px;
 }
 
 .sub-container3{
 display: flex;
-padding-left: 560px;
-
+padding-left: 460px;
+width: 180px;
 }
