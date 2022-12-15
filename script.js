@@ -7,7 +7,11 @@ const computerScore = document.querySelector('.computerScore')
 const returnResult = document.querySelector('.returnResult')
 
 // computer generate RPS using math random and return
-
+const getComputerChoice = () => {
+    const choices = ["rock", "paper", "scissors"];
+    return choices[Math.floor(Math.random() * choices.length)];
+  };
+  
 
 
 //playround function that uses result to return the game results from else if statements and makes changes to player score
