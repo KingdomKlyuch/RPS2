@@ -1,3 +1,5 @@
+const player = document.querySelector('.player')
+const computer = document.querySelector('.computer')
 const rock = document.querySelector('.rock')
 const paper = document.querySelector('.paper')
 const scissors = document.querySelector('.scissors')
@@ -20,8 +22,8 @@ const playRound = (playerSelection) => {
     const computerSelection = getComputerChoice();
     
     // Display player and computer choices
-    playerScore.innerHTML = `Player: ${playerSelection}`;
-    computerScore.innerHTML = `Computer: ${computerSelection}`;
+    playerScore.innerHTML = `player: ${playerSelection}`;
+    computerScore.innerHTML = `computer: ${computerSelection}`;
     
     // Compare player and computer choices and award a point to the winner
     if (playerSelection === computerSelection) {
