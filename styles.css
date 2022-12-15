@@ -1,0 +1,80 @@
+body {
+background: url("./images/background.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+margin: 100px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 40px;
+text-align: center;
+justify-content: center;
+  }
+  
+
+#topbox {
+display: flex;
+flex-direction: column;
+padding: 100px;
+}
+            .computerScore{
+
+            }
+
+            .computerScoreNum{
+
+            }
+
+            .computer{
+
+            }
+  
+
+#middlebox {
+display: flex;
+flex-direction: row;
+
+padding-left: 385px;
+width: 550px;
+height: 300px;
+gap: 40px;
+}
+
+            .rock{
+              
+            
+                
+            }
+
+            .paper{
+              
+            
+            }
+
+            .scissors{
+              
+            
+            }
+
+
+#bottombox {
+display: flex;
+flex-direction: column;
+padding: 100px;
+}
+
+            .playerScore{
+
+            }
+
+            .playerScoreNum{
+
+            }
+
+            .player{
+
+            }
+  
