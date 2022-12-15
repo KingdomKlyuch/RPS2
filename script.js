@@ -2,29 +2,19 @@ const rock = document.querySelector('.rock')
 const paper = document.querySelector('.paper')
 const scissors = document.querySelector('.scissors')
 const winner = document.querySelector('.winner')
-const playerScore = document.querySelector('.playerScore')
-const computerScore = document.querySelector('.computerScore')
 const returnResult = document.querySelector('.returnResult')
 const restart = document.querySelector('.restart')
+let playerScore = document.querySelector('.playerScore')
+let computerScore = document.querySelector('.computerScore')
+let playerSelection = ''
+
 
 // computer generate RPS using math random and return
 const getComputerChoice = () => {
     const choices = ["rock", "paper", "scissors"];
     return choices[Math.floor(Math.random() * choices.length)];
   };
-
-  rock.addEventListener('click', () => {
-    playRound('rock');
-  });
-  
-  paper.addEventListener('click', () => {
-    playRound('paper');
-  });
-  
-  scissors.addEventListener('click', () => {
-    playRound('scissors');
-  });
-  
+                                                            
 //playround function that uses result to return the game results from else if statements and makes changes to player score
 const playRound = (playerSelection) => {
     const computerSelection = getComputerChoice();
@@ -60,16 +50,29 @@ const playRound = (playerSelection) => {
     }
   };
 
-  restart.addEventListener('click', () => {
+ // restart.addEventListener('click', () => {
     // Reset player and computer scores
-    playerScore = 0;
-    computerScore = 0;
-    playerScore.innerHTML = `Player: 0`;
-    computerScore.innerHTML = `Computer: 0`;
-    winner.innerHTML = "";
-    returnResult.innerHTML = "";
-  });
+ //   playerScore = 0;
+ //   computerScore = 0;
+ //   playerScore.innerHTML = `Player: 0`;
+ //   computerScore.innerHTML = `Computer: 0`;
+ //   winner.innerHTML = "";
+ //   returnResult.innerHTML = "";
+ // });
 
+
+  rock.addEventListener('click', () => {
+    playRound('rock');
+  });
+  
+  paper.addEventListener('click', () => {
+    playRound('paper');
+  });
+  
+  scissors.addEventListener('click', () => {
+    playRound('scissors');
+  });
+  
 
 
 //if computer or player wins, game over
